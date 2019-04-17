@@ -1,0 +1,49 @@
+{
+  "name": "aux",
+  "description": "Complete token authentication system for react + redux",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "YET",
+    "email": "emretatar36@gmail.com"
+  },
+  "homepage": "http://github.com/yunusemre/adux.git",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yunusemre/adux.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "auth"
+  ],
+  "scripts": {
+    "clean": "rm -rf build",
+    "css-build": "npm run clean && node-sass src/index.scss build/index.css",
+    "build": "npm run css-build && babel src -d build",
+    "upload": "npm version patch --force -m 'update new version' && npm run build && npm publish"
+  },
+  "main": "./build/index.js",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.9.2",
+    "react": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "final-form": "^4.12.0",
+    "react-final-form": "^4.1.0",
+    "react-intl": "^2.8.0",
+    "react-redux-toastr": "^7.4.8"
+  }
+}

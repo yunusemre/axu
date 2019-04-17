@@ -1,0 +1,202 @@
+$containerwidth: 100%;
+
+.Adux--auth,
+.submitForm {
+  input,
+  button {
+    margin: 5px 0;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .errorFields {
+    color: red;
+  }
+}
+
+.Adux {
+  display: flex;
+
+  &--auth {
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 300px;
+    padding: 20px;
+    border: 2px solid #f8f8f8;
+    margin: 0 auto;
+  }
+
+  &--content {
+    max-width: 400px;
+    min-width: 320px;
+
+    .isForgotPassword,
+    .isLogin {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+    .submitForm {
+      .form-fields {
+        position: relative;
+        width: 100%;
+        input {
+          width: calc(#{$containerwidth} - 20px);
+          padding: 10px;
+          border-radius: 4px;
+          outline: none;
+          border: 1px solid #eee !important;
+          border: 0;
+        }
+
+        .onShowPassword {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+
+          svg {
+            width: 20px;
+          }
+        }
+
+        .LoginSubmitButton {
+          width: 70%;
+          border: 0;
+          padding: 8px;
+          border-radius: 4px;
+          font-size: 16px;
+          background-color: #eff3f6;
+          color: #24292e;
+          -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+          -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+          &:hover {
+            background-color: #e6ebf1;
+            border-color: rgba(27, 31, 35, 0.35);
+          }
+        }
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.marB10 {
+  margin-bottom: 10px;
+}
+.errorFields {
+  color: red;
+  font-size: 12px;
+}
+
+.Adux {
+  &-fullbackgorund {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &-content {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    float: right;
+    background: white;
+    padding: 20px;
+    border-left: 1px solid #f8f8f8;
+
+    @media screen and (max-width: 768px) {
+      width: calc(100% - 40px);
+      padding: 20;
+    }
+
+    &-header {
+      margin-bottom: 60px;
+
+      &__title {
+        font-size: 24px;
+      }
+    }
+    &-wrapper {
+      width: 80%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .isForgotPassword,
+      .isLogin {
+        font-size: 12px;
+        margin-top: 40px;
+      }
+      .submitForm {
+        .form-fields {
+          position: relative;
+          width: 100%;
+          input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 4px;
+            outline: none;
+            border: 1px solid #eee !important;
+            border: 0;
+          }
+
+          .onShowPassword {
+            svg {
+              position: absolute;
+              top: 30px;
+            }
+          }
+
+          .LoginSubmitButton {
+            width: 70%;
+            border: 0;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #eff3f6;
+            border: 1px solid #ececec;
+            color: #24292e;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+            &:hover {
+              background-color: #e6ebf1;
+              border-color: rgba(192, 194, 195, 0.35);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

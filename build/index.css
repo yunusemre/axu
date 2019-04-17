@@ -1,0 +1,151 @@
+.Adux--auth input,
+.Adux--auth button,
+.submitForm input,
+.submitForm button {
+  margin: 5px 0; }
+
+.Adux--auth button,
+.submitForm button {
+  cursor: pointer; }
+
+.Adux--auth .errorFields,
+.submitForm .errorFields {
+  color: red; }
+
+.Adux {
+  display: flex; }
+  .Adux--auth {
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 300px;
+    padding: 20px;
+    border: 2px solid #f8f8f8;
+    margin: 0 auto; }
+  .Adux--content {
+    max-width: 400px;
+    min-width: 320px; }
+    .Adux--content .isForgotPassword,
+    .Adux--content .isLogin {
+      font-size: 12px;
+      margin-top: 20px; }
+    .Adux--content .submitForm .form-fields {
+      position: relative;
+      width: 100%; }
+      .Adux--content .submitForm .form-fields input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid #eee !important;
+        border: 0; }
+      .Adux--content .submitForm .form-fields .onShowPassword {
+        position: absolute;
+        top: 10px;
+        right: 20px; }
+        .Adux--content .submitForm .form-fields .onShowPassword svg {
+          width: 20px; }
+      .Adux--content .submitForm .form-fields .LoginSubmitButton {
+        width: 70%;
+        border: 0;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: #eff3f6;
+        color: #24292e;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .Adux--content .submitForm .form-fields .LoginSubmitButton:hover {
+          background-color: #e6ebf1;
+          border-color: rgba(27, 31, 35, 0.35); }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.marB10 {
+  margin-bottom: 10px; }
+
+.errorFields {
+  color: red;
+  font-size: 12px; }
+
+.Adux-fullbackgorund {
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block; }
+  @media screen and (max-width: 768px) {
+    .Adux-fullbackgorund {
+      display: none; } }
+
+.Adux-content {
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  float: right;
+  background: white;
+  padding: 20px;
+  border-left: 1px solid #f8f8f8; }
+  @media screen and (max-width: 768px) {
+    .Adux-content {
+      width: calc(100% - 40px);
+      padding: 20; } }
+  .Adux-content-header {
+    margin-bottom: 60px; }
+    .Adux-content-header__title {
+      font-size: 24px; }
+  .Adux-content-wrapper {
+    width: 80%;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .Adux-content-wrapper {
+        width: 100%; } }
+    .Adux-content-wrapper .isForgotPassword,
+    .Adux-content-wrapper .isLogin {
+      font-size: 12px;
+      margin-top: 40px; }
+    .Adux-content-wrapper .submitForm .form-fields {
+      position: relative;
+      width: 100%; }
+      .Adux-content-wrapper .submitForm .form-fields input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid #eee !important;
+        border: 0; }
+      .Adux-content-wrapper .submitForm .form-fields .onShowPassword svg {
+        position: absolute;
+        top: 30px; }
+      .Adux-content-wrapper .submitForm .form-fields .LoginSubmitButton {
+        width: 70%;
+        border: 0;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: #eff3f6;
+        border: 1px solid #ececec;
+        color: #24292e;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .Adux-content-wrapper .submitForm .form-fields .LoginSubmitButton:hover {
+          background-color: #e6ebf1;
+          border-color: rgba(192, 194, 195, 0.35); }
+        .Adux-content-wrapper .submitForm .form-fields .LoginSubmitButton:focus {
+          outline: none; }
