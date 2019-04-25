@@ -1,5 +1,5 @@
 {
-  "name": "aux",
+  "name": "axu",
   "description": "Complete token authentication system for react + redux",
   "version": "0.1.0",
   "license": "MIT",
@@ -7,10 +7,10 @@
     "name": "YET",
     "email": "emretatar36@gmail.com"
   },
-  "homepage": "http://github.com/yunusemre/adux.git",
+  "homepage": "http://github.com/yunusemre/axu.git",
   "repository": {
     "type": "git",
-    "url": "http://github.com/yunusemre/adux.git"
+    "url": "http://github.com/yunusemre/axu.git"
   },
   "keywords": [
     "react",

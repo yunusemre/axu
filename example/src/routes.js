@@ -1,6 +1,6 @@
 import HomePage from "./containers/Home";
 import AboutPage from "./containers/About";
-import { Login, ForgotPassword } from "adux";
+import { Login, ForgotPassword } from "axu";
 import logo from "./assets/logo.png";
 import Image from "./assets/bg2.jpg";
 

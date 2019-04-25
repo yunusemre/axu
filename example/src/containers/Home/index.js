@@ -1,5 +1,5 @@
 import React from "react";
-import { LoginForm } from "adux";
+import { LoginForm } from "axu";
 import messages from "./messages";
 
 export default class HomePage extends React.Component {

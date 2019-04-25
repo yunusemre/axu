@@ -1,7 +1,7 @@
-## Adux
+## axu
 
 ```bash
-$ npm install adux -S / npm install adux --save
+$ npm install axu -S / npm install axu --save
 ```
 
 This package is a auth boilerplate. Contains a login and forgot password page. There are a some default config in package. Examples;
@@ -10,7 +10,7 @@ Default configs: {
 
 ```
   authConfig: {
-    name: "Adesso Auth Package"
+    name: "Auth Package"
   },
   isForgotPassword: false,
   isLogin: false,
@@ -23,13 +23,13 @@ There are two themes and a login form. For first theme, `theme: false`. If `them
 ## Login Page:
 
 ```
-import { Login } from "adux";
+import { Login } from "axu";
 ```
 
 ```
   config : {
     authConfig: {
-      name: "Adesso Auth Package",
+      name: "Auth Package",
       login: {
         path: "/api/login/",
         redirect: "/",
@@ -49,20 +49,20 @@ import { Login } from "adux";
 For using, have to import login reducers
 
 ```
-import { reducerLogin } from "adux";
+import { reducerLogin } from "axu";
 ```
 
 ## Forgot Password Page:
 
 ```
-import { ForgotPassword } from "adux";
+import { ForgotPassword } from "axu";
 
 ```
 
 ```
   config : {
     authConfig: {
-      name: "Adesso Auth Package",
+      name: "Auth Package",
       forgot_password: {
         path: "/api/forgot_password/",
         redirect: "/login",
@@ -82,7 +82,7 @@ import { ForgotPassword } from "adux";
 For using, have to import forgot password reducers
 
 ```
-import { reducerForgotPassword } from "adux";
+import { reducerForgotPassword } from "axu";
 
 ```
 
