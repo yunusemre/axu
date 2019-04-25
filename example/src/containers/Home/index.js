@@ -1,5 +1,6 @@
 import React from "react";
 import { LoginForm } from "axu";
+import { Link } from "react-router-dom";
 import messages from "./messages";
 
 export default class HomePage extends React.Component {
@@ -17,6 +18,12 @@ export default class HomePage extends React.Component {
   render() {
     return (
       <div className="formBox">
+        <div>
+          <Link to="/auth/login">Login page</Link>
+        </div>
+        <div>
+          <Link to="/auth/forgot-password">Forgot password page</Link>
+        </div>
         <LoginForm
           isLabel={false}
           onSubmit={this.submitForm}
